@@ -1,3 +1,20 @@
+/*
+SCRIPT PURPOSE:
+	The purpose of this script to check the presence of tables in the silver layer 
+	and drop them. It then creates new tables, reolacing those that were present 
+	( if thy were present before)
+
+	The tables created are;
+		silver.crm_cust_info,
+		silver.crm_prd_info,
+		silver.crm_sls_details
+		silver.erp_CUST_AZ12,
+		silver.erp_LOC_A101,
+and		silver.erp_PX_CAT_G1V2
+*/
+
+
+
 IF OBJECT_ID('silver.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE silver.crm_cust_info
 CREATE TABLE silver.crm_cust_info (
