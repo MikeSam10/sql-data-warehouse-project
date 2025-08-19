@@ -39,10 +39,10 @@ sls_quantity INT,
 sls_price INT
 )
 
-CREATE TABLE bronze.erp_CUST_AZ12(
-CID NVARCHAR(50),
-BDATE DATE,
-GEN NVARCHAR(50)
+CREATE TABLE bronze.erp_CUST_az12(
+cid NVARCHAR(50),
+bdate DATE,
+gen NVARCHAR(50)
 )
 
 CREATE TABLE bronze.erp_LOC_A101(
